@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Druk';
+    src: url(Fonts/DrukCond-Super-Trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height: 100vh;;
+}
+
+.swiper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.swiper-slide{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+
+.swiper-slide-active {
+    z-index: 2;
+  }
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  z-index: 0;
+}
+
+.slider-img{
+    width: 85%;
+    height: 40%;
+    background: url(Images/Strawberry_Shortcake-bg.webp);
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+}
+
+.slider-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.is-strawberry{
+    color: #EF1525;
+}
+
+
+.is-banana{
+    color: #FFC108;
+}
+
+.is-ube{
+    color: #B595BF;
+}
+
+.is-mango{
+    color: #EA1B0E;
+}
+
+.is-churro{
+    color: #BF4C6B;
+}
+
+.is-coffee{
+    color: #604442;
+}
+
+.flavour-image{
+    height: 40%;
+    width: auto;
+    position: absolute;
+    transform: translateY(40%);
+    z-index: 3;
+}
+
+.slider-heading{
+    font-size: 20vw;
+    flex-shrink: 0;
+    font-family: 'Druk';
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.is-coffee>h2{
+    opacity: 100%;
+}
+
+.is-upper{
+    margin-bottom: -13%;
+}
+
+.is-lower{
+    margin-top: -13%;
+}
+
+.slider-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: royalblue;
+    transform: translateY(0%);
+}
+
+.slider-bg > svg{
+    transform: translateY(-98%);
+}
+
